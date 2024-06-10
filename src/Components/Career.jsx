@@ -2,6 +2,7 @@ import React from 'react';
 import { FaLocationDot } from "react-icons/fa6";
 import { RiHandbagFill } from "react-icons/ri";
 import { FaGreaterThan } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Career = () => {
   const data=[
     {
@@ -84,9 +85,9 @@ const Career = () => {
             <h1 className='text-xl font-semibold text-black'>{d.jobTitle}</h1>
             <p className='font-normal text-gray-800'>{d.vacancies} positions vacancy</p>
           </div>
-          <a href={`/career/${d.id}`}>
+          <Link to={`/career/${d.id}`}>
           <FaGreaterThan   className='cursor-pointer'/>
-          </a>
+          </Link>
           </div>
         ))
       }

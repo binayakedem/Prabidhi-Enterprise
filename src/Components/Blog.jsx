@@ -1,7 +1,5 @@
 import React from 'react';
-import { FaLocationDot } from "react-icons/fa6";
-import { RiHandbagFill } from "react-icons/ri";
-import { FaGreaterThan } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 const Blog= () => {
   const data=[
     {
@@ -102,7 +100,7 @@ const Blog= () => {
             data.map((d)=>(
           <div className='flex flex-row  justify-between my-10 gap-8'>
             <div className='h-50 w-[50vw] overflow-hidden'>
-              <a href={`/blog/${d.id}`}><img className='object-cover h-50 w-full cursor-pointer hover:scale-125 duration-500 ease-in-out' src={d.image} alt="" /></a>
+              <Link to={`/blog/${d.id}`}><img className='object-cover h-50 w-full cursor-pointer hover:scale-125 duration-500 ease-in-out' src={d.image} alt="" /></Link>
             </div>
             <div className=''>  
               <div className='flex flex-row gap-2 text-sm'>
