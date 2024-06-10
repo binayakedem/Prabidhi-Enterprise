@@ -124,9 +124,9 @@ const About = () => {
                     
             <div key={d.id}>
                 <div className='relative h-60 w-auto'>
-                    <img className='h-full rounded-2xl w-full object-cover' src={d.image} alt="profile" />
+                    <img className='h-full rounded-2xl w-full object-cover hover:scale-105 duratio-500 ease-in-out cursor-pointer' src={d.image} alt="profile" />
                     <div className='absolute inset-0 text-blue-600 text-xl flex justify-end items-end'>
-                    <FaLinkedin size={40}/>
+                    <a href="https://www.linkedin.com/"><FaLinkedin size={30}/></a>
                     </div>
 
                 </div>

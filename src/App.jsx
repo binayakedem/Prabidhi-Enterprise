@@ -8,6 +8,8 @@ import About from "./Components/About"
 import Aos from "aos"
 import Career from "./Components/Career"
 import SingleCareer from "./Components/singleCareer"
+import Blog from "./Components/Blog"
+import SingleBlog from "./Pages/SingleBlog"
 function App() {
   Aos.init();
   return (
@@ -20,7 +22,8 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/career" element={<Career/>}/>
       <Route path="/career/:id" element={<SingleCareer/>}/>
-
+      <Route path="/blog" element={<Blog/>}/>
+      <Route path="/blog/:id" element={<SingleBlog/>}/>
     </Routes>
     <Scroll/>
     <Footer/>

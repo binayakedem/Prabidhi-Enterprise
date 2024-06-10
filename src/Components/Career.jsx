@@ -78,7 +78,7 @@ const Career = () => {
           {
             data.map((d)=>(
               
-          <div className='h-20 rounded transform hover:translate-y-[-10px] duration-500 ease-in-out bg-blue-300 flex flex-row justify-between items-center px-10 '>
+          <div className='h-20 rounded transform hover:translate-y-[-10px] duration-500 ease-in-out bg-yellow-300 flex flex-row justify-between items-center px-10 '>
           <RiHandbagFill />
           <div>
             <h1 className='text-xl font-semibold text-black'>{d.jobTitle}</h1>
